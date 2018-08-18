@@ -2,6 +2,13 @@ language: node_js
 node_js: node
 cache:
   directories:
-    - node_modules
+  - node_modules
 env:
-  - CI=true
+- CI=true
+deploy:
+  provider: heroku
+  api_key:
+    secure: OXCQbmWeC38buGk0cSjKps7bPaNcz+cxXS1ObDi+2fIwyb7pazsMLMrmbo3n8aaba+4S7+BuytTDVHL1FNEBb4kRk49PZA2bz0Bi7QgH+xcyoMlqrKm77bobqJJwES7xA5alzyGKxg7mp70UFJYd74kOWtguhiCIiKcCnVZ3ZPxCrptU6kbCGhe2D4k96azoLU0cRSTh6KFLQ3Y4K5Yr0xw6Uya60WxYAsP7/1xVWEMPmZlTeGmnvO+irO70aHOMp8bdMFvqaCXwCZZmY7WcTLs+RMh567C0wPUFPR1iWskIpvrUhfMSY1vwkB6ISKDTngHYCbXUf1cQS81ZECrVLLSsJn/qXt8dJeKr9+73N2fUHhX5vafzrJAbo5UA1UQtCnDsk033DMFk8XPyPtKTfEZEEgzcDBei9tTS63s7UejlrQF3gbT0czn9nFsw8JVlZHyIkZs3UikU1L1LRG/1+rExn3+p0HxGjnEt1nVNizXL5Y3wzHykw/7jifG1ZUHY8Hvs2OIfj2YASw839fKHEvEcjGYtQJbP/IFeJ9Y7pKDDs2sxuwff6VNQ+TMeteZlu52ZrvMgAnJBUf/TbJf3xbYtL6x2YcyzJLvEIgdX94Eit4/0fIGmWxNXYd+ePMf/so2/qvQMuhVS3lLaqWBugTYO258Q82vw7mVJvb+QgSw=
+  app: afternoon-cove-72248
+  on:
+    repo: cellphone4ET/hot-or-cold-testing
